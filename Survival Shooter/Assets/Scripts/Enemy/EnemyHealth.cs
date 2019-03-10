@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class EnemyHealth : MonoBehaviour
 {
     public int startingHealth = 100;
@@ -7,16 +6,12 @@ public class EnemyHealth : MonoBehaviour
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
     public AudioClip deathClip;
-
-
     Animator anim;
     AudioSource enemyAudio;
     ParticleSystem hitParticles;
     CapsuleCollider capsuleCollider;
     bool isDead;
     bool isSinking;
-
-
     void Awake ()
     {
         anim = GetComponent <Animator> ();
@@ -26,8 +21,6 @@ public class EnemyHealth : MonoBehaviour
 
         currentHealth = startingHealth;
     }
-
-
     void Update ()
     {
         if(isSinking)
@@ -35,8 +28,6 @@ public class EnemyHealth : MonoBehaviour
             transform.Translate (-Vector3.up * sinkSpeed * Time.deltaTime);
         }
     }
-
-
     public void TakeDamage (int amount, Vector3 hitPoint)
     {
         if(isDead)
@@ -54,8 +45,6 @@ public class EnemyHealth : MonoBehaviour
             Death ();
         }
     }
-
-
     void Death ()
     {
         isDead = true;
@@ -67,8 +56,6 @@ public class EnemyHealth : MonoBehaviour
         enemyAudio.clip = deathClip;
         enemyAudio.Play ();
     }
-
-
     public void StartSinking ()
     {
         GetComponent <UnityEngine.AI.NavMeshAgent> ().enabled = false;

@@ -1,12 +1,9 @@
 ﻿using UnityEngine;
-
 public class PlayerShooting : MonoBehaviour
 {
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
-
-
     float timer;
     Ray shootRay = new Ray();
     RaycastHit shootHit;
@@ -16,8 +13,6 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
-
     void Awake ()
     {
         shootableMask = LayerMask.GetMask ("Shootable");
@@ -26,8 +21,6 @@ public class PlayerShooting : MonoBehaviour
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
     }
-
-
     void Update ()
     {
         timer += Time.deltaTime;
@@ -42,15 +35,11 @@ public class PlayerShooting : MonoBehaviour
             DisableEffects ();
         }
     }
-
-
     public void DisableEffects ()
     {
         gunLine.enabled = false;
         gunLight.enabled = false;
     }
-
-
     void Shoot ()
     {
         timer = 0f;
