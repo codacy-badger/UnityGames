@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -13,8 +12,6 @@ public class EnemyAttack : MonoBehaviour
     //EnemyHealth enemyHealth;
     bool playerInRange;
     float timer;
-
-
     void Awake ()
     {
         player = GameObject.FindGameObjectWithTag ("Player");
@@ -22,8 +19,6 @@ public class EnemyAttack : MonoBehaviour
         //enemyHealth = GetComponent<EnemyHealth>();
         anim = GetComponent <Animator> ();
     }
-
-
     void OnTriggerEnter (Collider other)
     {
         if(other.gameObject == player)
@@ -31,8 +26,6 @@ public class EnemyAttack : MonoBehaviour
             playerInRange = true;
         }
     }
-
-
     void OnTriggerExit (Collider other)
     {
         if(other.gameObject == player)
@@ -40,8 +33,6 @@ public class EnemyAttack : MonoBehaviour
             playerInRange = false;
         }
     }
-
-
     void Update ()
     {
         timer += Time.deltaTime;
@@ -56,8 +47,6 @@ public class EnemyAttack : MonoBehaviour
             anim.SetTrigger ("PlayerDead");
         }
     }
-
-
     void Attack ()
     {
         timer = 0f;
