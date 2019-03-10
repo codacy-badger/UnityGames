@@ -3,3 +3,4 @@
 View the releases [here](https://github.com/cainy-a/UnityGames/releases). You can also view my projects on [itch.io](https://yellowsink.itch.io).
 ### Projects are listed below:
 - Space Shooter [View on itch.io](https://yellowsink.itch.io/space-shooter)
+- Survival Shoooter [View on itch.io](https://yellowsink.itch.io/survival-shooter)
