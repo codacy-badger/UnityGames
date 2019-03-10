@@ -71,7 +71,6 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\Fonts\LuckiestGuy\FontLicense.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/caina/Documents/Unity/Survival Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
