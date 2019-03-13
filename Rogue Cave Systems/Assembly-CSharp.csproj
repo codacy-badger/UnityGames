@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\BoardManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Loader.cs" />
+    <Compile Include="Assets\Scripts\MovingObject.cs" />
+    <Compile Include="Assets\Scripts\Wall.cs" />
     <None Include="Assets\Fonts\OFL.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/caina/Documents/Unity/Rogue Cave Systems/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
