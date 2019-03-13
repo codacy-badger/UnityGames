@@ -60,9 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\TutorialInfo.cs" />
-    <None Include="Assets\TutorialInfo\Fonts\LICENSE.txt" />
+    <Compile Include="Assets\Scripts\BoardManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <None Include="Assets\Fonts\OFL.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/caina/Documents/Unity/Rogue Cave Systems/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
