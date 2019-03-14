@@ -1,0 +1,1 @@
+The licence for the font press start 2p can be found at Assets/Fonts/OFL.txt
